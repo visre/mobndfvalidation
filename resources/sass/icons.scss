@@ -1,0 +1,122 @@
+@mixin custom-icon($name, $font-family: false) {
+    .icon-#{$name}{
+        $character: icon-character-for-name($name);
+ 
+        &:before {
+            font-style: normal;
+            text-align: center;
+ 
+            @if $font-family {
+                font-family: $font-family;
+            } @else{
+                font-family: 'Pictos';
+            }
+ 
+            @if $character {
+                content: "#{$character}";
+            } @else {
+                content: "#{$name}";
+            }
+        }
+    }
+}
+
+
+
+@include custom-icon('camera');
+@include custom-icon('anchor');
+@include custom-icon('box');
+@include custom-icon('upload');
+@include custom-icon('forbidden');
+@include custom-icon('lightning');
+@include custom-icon('rss');
+@include custom-icon('team');
+@include custom-icon('help');
+@include custom-icon('info');
+@include custom-icon('attachment');
+@include custom-icon('heart');
+@include custom-icon('list');
+@include custom-icon('music');
+@include custom-icon('table');
+@include custom-icon('folder');
+@include custom-icon('pencil');
+@include custom-icon('chat2');
+@include custom-icon('retweet');
+@include custom-icon('search');
+@include custom-icon('time');
+@include custom-icon('switch');
+@include custom-icon('camera');
+@include custom-icon('chat');
+@include custom-icon('settings2');
+@include custom-icon('settings');
+@include custom-icon('tags');
+@include custom-icon('attachment2');
+@include custom-icon('bird');
+@include custom-icon('cloud');
+@include custom-icon('delete_black1');
+@include custom-icon('eye');
+@include custom-icon('file');
+@include custom-icon('browser');
+@include custom-icon('home');
+@include custom-icon('inbox');
+@include custom-icon('network');
+@include custom-icon('key');
+@include custom-icon('radio');
+@include custom-icon('mail');
+@include custom-icon('news');
+@include custom-icon('case');
+@include custom-icon('photos');
+@include custom-icon('power');
+@include custom-icon('action');
+@include custom-icon('favorites');
+@include custom-icon('plane');
+@include custom-icon('user');
+@include custom-icon('video');
+@include custom-icon('compose');
+@include custom-icon('truck');
+@include custom-icon('chart2');
+@include custom-icon('chart');
+@include custom-icon('expand');
+@include custom-icon('refresh');
+@include custom-icon('check');
+@include custom-icon('check2');
+@include custom-icon('play');
+@include custom-icon('pause');
+@include custom-icon('stop');
+@include custom-icon('forward');
+@include custom-icon('rewind');
+@include custom-icon('play2');
+@include custom-icon('refresh2');
+@include custom-icon('minus');
+@include custom-icon('battery');
+@include custom-icon('left');
+@include custom-icon('right');
+@include custom-icon('calendar');
+@include custom-icon('shuffle');
+@include custom-icon('wireless');
+@include custom-icon('speedometer');
+@include custom-icon('more');
+@include custom-icon('print');
+@include custom-icon('download');
+@include custom-icon('warning_black');
+@include custom-icon('locate');
+@include custom-icon('trash');
+@include custom-icon('cart');
+@include custom-icon('bank');
+@include custom-icon('flag');
+@include custom-icon('add');
+@include custom-icon('delete');
+@include custom-icon('lock');
+@include custom-icon('unlock');
+@include custom-icon('minus2');
+@include custom-icon('add2');
+@include custom-icon('up');
+@include custom-icon('down');
+@include custom-icon('screens');
+@include custom-icon('bell');
+@include custom-icon('quote');
+@include custom-icon('volume_mute');
+@include custom-icon('volume');
+@include custom-icon('help');
+
+

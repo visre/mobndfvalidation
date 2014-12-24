@@ -1,0 +1,11 @@
+﻿{"title-fr":"Validation note de frais",
+"title-en":"Check in expenses",
+"home":"home.html",
+"image-gallery":"image-gallery-256.png",
+"lib":"lib-1.0.0",
+"package":"mobndfvalidationpackage.xml",
+"project":"gcnotefrais",
+"author":"(C) Copr. Sage France",
+"infos-fr":"Validation des notes de frais",
+"infos-en":"Management of expenses and advances",
+"name":"Expenses for managers"}

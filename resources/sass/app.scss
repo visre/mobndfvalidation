@@ -1,0 +1,281 @@
+// The following two lines import the default Sencha Touch theme. If you are building
+// a new theme, remove them and the add your own CSS on top of the base CSS (which
+// is already included in your app.json file).
+@import 'sencha-touch/tizen';
+@import 'sencha-touch/tizen/all';
+@import 'compass/css3';
+
+@import 'capturepicture';
+@import 'icons';
+
+// @include icon-font('wtccustomicons', inline-font-files(
+//  'icomoon/icomoon.woff', woff,
+//  'icomoon/icomoon.ttf', truetype,
+//  'icomoon/icomoon.svg', svg
+// ));
+
+
+// @include icon("del" , "\e600", "wtccustomicons");
+// @include icon("delall" , "\e601", "wtccustomicons");
+// @include icon("send" , "\e602", "wtccustomicons");
+// @include icon("sendall" , "\e603", "wtccustomicons");
+
+$list-padding: .7em;
+
+body,
+.x-fullscreen, .x-layout-fit-item, .x-layout-card-item {
+    background: #fff;
+}
+
+#chartdiv1 {
+    width       : 100%;
+    height      : 100%;
+}           
+#chartdiv2 {
+    width       : 100%;
+    height      : 100%;
+}           
+#chartdiv3 {
+    width       : 100%;
+    height      : 100%;
+}           
+#chartdiv4 {
+    width       : 100%;
+    height      : 100%;
+}           
+.x-innerhtml {
+    width       : 100%;
+    height      : 100%;
+}           
+
+.entries {
+    text-align: center;
+
+    .entries-container {
+        max-width: 700px;
+        margin: 0 auto;
+    }
+
+    .entries-item {
+        background: rgba(38, 38, 38, .7);
+        border: 1px solid rgba(67, 67, 67, .7);
+        height: 180px;
+        width: 280px;
+        -webkit-transition: background .2s ease-in, border-color .2s ease-in;
+
+        body.x-phone & {
+            margin: 0 20px;
+            margin-top: 20px;
+            padding: 30px;
+
+            &:first-child {
+                margin-top: 0;
+            }
+        }
+
+        body:not(.x-phone) & {
+            display: inline-block;
+            padding: 30px 50px;
+        }
+
+        .icon{
+            text-align: center;
+            font-size: 0.8em;
+            i{
+                display:block;
+                font-size: 3.5em;;
+                color:#fff;
+            }
+        }
+
+        .label {
+            width: 100%;
+            padding: 70px 10px 5px 10px;
+            color: #fff;
+            font-size: 20px;
+            font-family: 'Quattrocento Sans', sans-serif;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .x-landscape & {
+            margin: 10px;
+        }
+
+        .x-portrait & {
+            margin: 20px;
+        }
+    }
+
+    .x-item-pressed {
+        background: rgba(0, 53, 41, .7);
+        border-color: rgba(0, 53, 41, .8);
+    }
+
+    .entries-inner {
+        background: url(../images/bg2-3.jpg) no-repeat center fixed; 
+        -webkit-background-size: cover; /* pour Chrome et Safari */
+        -moz-background-size: cover; /* pour Firefox */
+        -o-background-size: cover; /* pour Opera */
+        background-size: cover; /* version standardisée */
+        line-height: 10px;
+
+        .x-landscape & {
+            padding-top: 10px;
+        }
+
+        .x-portrait & {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+    }
+
+    &.root {
+        body:not(.x-phone).x-landscape & {
+            .entries-item {
+                &:first-child {
+                    margin-right: 345px;
+                }
+            }
+        }
+
+        .x-phone & {
+            .entries-inner {
+                padding-top: 100px;
+            }
+        }
+
+        body:not(.x-phone).x-portrait & {
+            .entries-inner {
+                padding-top: 280px;
+            }
+        }
+    }
+}
+
+.ndftab {
+    .x-tab-active {
+        background : green;
+    }
+}
+
+.ndfs {
+    background-color: #fff;
+    .x-dataview-inner {
+        padding: $list-padding;
+    }
+    .x-list-item {
+        overflow: hidden;
+
+        .main {
+            color: #222222;
+            font-weight: bold;
+            font-size: 0.8em;
+        }
+
+        .title-left {
+            color : #222222;
+            font-size: 0.7em;
+            float: left;
+        }
+
+        .title-right {
+            float: right;
+            color : #222222;
+            font-weight: bold;
+            margin-top: 25px;
+            font-size: 1.0em;
+        }
+
+        .status {
+            float: right;
+            color : #222222;
+            width : 130px;
+            text-align : right;
+        }
+        .other {
+            border-top: 4px solid #1362A3;
+            font-size: 0.8em;
+            float: right;
+        }
+
+        .valide {
+            border-top: 4px solid #228373;
+            font-size: 0.8em;
+            margin-top: 3px;
+            float: right;
+        }
+
+        .avalider {
+            border-top: 4px solid #EB8831;
+            font-size: 0.8em;
+            float: right;
+        }
+
+        .comptabilise {
+            border-top: 4px solid #0066ff;
+            font-size: 0.8em;
+            float: right;
+        }
+
+        .regle {
+            border-top: 4px solid #00ff66;
+            font-size: 0.8em;
+            float: right;
+        }
+
+        .refuse {
+            border-top: 4px solid #ff3300;
+            font-size: 0.8em;
+            float: right;
+        }
+        
+        .bottom{
+            margin-top: 25px;
+        }
+
+        .bottom-left {
+            color : #777777;
+            font-size: 0.6em;
+            float: left;
+        }
+        .bottom-right {
+            float: right;               
+        }
+    }
+    .x-dataview-item:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        border-width: 0 16px 16px 0;
+        border-style: solid;
+        border-color: #E7E7E7 #fff;
+        display: block;
+        width: 0;
+        -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.3), -1px 1px 1px rgba(0,0,0,0.2);
+        -moz-box-shadow: 0 1px 1px rgba(0,0,0,0.3), -1px 1px 1px rgba(0,0,0,0.2);
+        box-shadow: 0 1px 1px rgba(0,0,0,0.3), -1px 1px 1px rgba(0,0,0,0.2);
+    }
+
+    .x-item-selected {
+        background-color: grey;
+        .title {
+            color: #fff;
+ /*           font-weight: bold;
+            font-size: 1em;
+            margin-bottom: 30px;
+ */       }
+        .bottom {
+            color: #fff;
+ /*           margin-top: 10px;
+            font-size: 0.9em;
+ */       }
+        div {
+            color: white;
+        }
+    }
+}
+// Custom code goes here..
+// Examples of using the icon mixin:
